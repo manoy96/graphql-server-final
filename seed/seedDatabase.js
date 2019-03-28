@@ -7,32 +7,37 @@ const client = new GraphQLClient('http://localhost:4466')
 
 const mutation = `mutation addRocket(
 
-   $name: String
-   $country: String
-   $cost: Int
-   $id: ID! @unique
-   $payloadLeo: Int
-   $payloadGto:Int
-   $kgLeo: Int
-   $kgGto: Int
+   $name: String,
+   $country: String,
+   $cost: Int,
+   $payloadLeo: Int,
+   $payloadGto:Int,
+   $kgLeo: Int,
+   $kgGto: Int,
 ) {
     createRocket(data: {
-      name: String
-      country: String
-      cost: Int
-      id: ID! @unique
-      payloadLeo: Int
-      payloadGto:Int
-      kgLeo: Int
-      kgGto: Int
+      name: $name
+      country: $country
+      cost: $cost
+      payloadLeo: $payloadLeo
+      payloadGto: $payloadGto
+      kgLeo: $kgLeo
+      kgGto: $kgGto
     })
     {
       id
+      name
+      country
+      cost
+      payloadLeo
+      payloadGto
+      kgLeo
+      kgGto
     }
   }
 `
 
-const sampleFiles = ['pokemon-data.json']
+const sampleFiles = ['rocket-data.json']
 
 async function main(inputFile) {
    const content = fs.readFileSync(`./seed/${inputFile}`)
@@ -43,7 +48,6 @@ async function main(inputFile) {
          name: item.name,
          country: item.country,
          cost: item.cost,
-         id: item.id,
          payloadLeo: item.payloadLeo,
          payloadGto: item.payloadGto,
          kgLeo: item.kgLeo,

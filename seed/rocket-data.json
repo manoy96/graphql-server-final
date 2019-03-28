@@ -1,0 +1,12 @@
+[
+    {
+        name: $name
+        country: $country
+        cost: $cost
+        payloadLeo: $payloadLeo
+        payloadGto: $payloadGto
+        kgLeo: $kgLeo
+        kgGto: $kgGto
+      }
+        
+    ]

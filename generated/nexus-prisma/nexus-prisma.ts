@@ -166,7 +166,7 @@ export interface RocketFieldDetails {
     args: {}
     description: string
     list: undefined
-    nullable: true
+    nullable: false
     resolve: undefined
   }
   country: {
@@ -174,7 +174,7 @@ export interface RocketFieldDetails {
     args: {}
     description: string
     list: undefined
-    nullable: true
+    nullable: false
     resolve: undefined
   }
   cost: {
@@ -182,7 +182,7 @@ export interface RocketFieldDetails {
     args: {}
     description: string
     list: undefined
-    nullable: true
+    nullable: false
     resolve: undefined
   }
   id: {
@@ -687,7 +687,7 @@ export interface RocketPreviousValuesFieldDetails {
     args: {}
     description: string
     list: undefined
-    nullable: true
+    nullable: false
     resolve: undefined
   }
   country: {
@@ -695,7 +695,7 @@ export interface RocketPreviousValuesFieldDetails {
     args: {}
     description: string
     list: undefined
-    nullable: true
+    nullable: false
     resolve: undefined
   }
   cost: {
@@ -703,7 +703,7 @@ export interface RocketPreviousValuesFieldDetails {
     args: {}
     description: string
     list: undefined
-    nullable: true
+    nullable: false
     resolve: undefined
   }
   id: {
@@ -933,9 +933,9 @@ export type RocketWhereInputInputObject =
   | { name: 'NOT', alias?: string  } 
   
 export interface RocketCreateInput {
-  name?: string | null
-  country?: string | null
-  cost?: number | null
+  name?: string
+  country?: string
+  cost?: number
   payloadLeo?: number | null
   payloadGto?: number | null
   kgLeo?: number | null
