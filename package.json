@@ -1,0 +1,28 @@
+{
+  "name": "grapql-server-practice",
+  "version": "1.0.0",
+  "description": "This is my graphql server practice project",
+  "main": "index.js",
+  "scripts": {
+    "dockerStart": "docker-compose -f ./docker-compose.yml up -d",
+    "deploy": "prisma deploy",
+    "load": "node ./seed/seedDatabase.js",
+    "reset": "prisma reset --force",
+    "delete": "prisma delete --force",
+    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./"
+  },
+  "author": "Manuel Espinoza",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.1.1",
+    "graphql-request": "^1.8.2",
+    "graphql-yoga": "^1.17.4",
+    "nexus": "^0.11.2",
+    "nexus-prisma": "^0.3.5",
+    "prisma-client-lib": "^1.28.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.3.3333"
+  }
+}

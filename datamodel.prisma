@@ -1,0 +1,89 @@
+type Rocket {
+  name: String
+  cost: Int
+  id: ID! @unique
+  payloadLeo: Int
+  payloadGto:Int
+  kgLeo: Int
+  kgGto: Int
+}
+type Model {
+  origin: String
+  name: String
+  company: String
+}
+
+type Pokemon {
+  abilities: [Ability!]!
+  base_experience: Int
+  forms: [Form!]!
+  game_indices: [GameIndex!]!
+  held_items: [Item!]!
+  height: Int
+  id: ID! @unique
+  is_default: Boolean
+  location_area_encounters: String
+  moves: [Move!]!
+  name: String
+  order: Int
+  species: [Species!]!
+  sprites: [Sprite!]!
+  stats: [Stat!]!
+  types: [Type!]!
+  weight: Int
+  url: String
+}
+
+type Ability {
+  name: String
+  url: String
+}
+
+type Form {
+  name: String
+  url: String
+}
+
+type GameIndex {
+  name: String
+  url: String
+}
+
+type Item {
+  name: String
+  url: String
+}
+
+type Move {
+  name: String
+  url: String
+}
+
+type Species {
+  name: String
+  url: String
+}
+
+type Sprite {
+  back_default: String
+  back_female: String
+  back_shiny: String
+  back_shiny_female: String
+  front_default: String
+  front_female: String
+  front_shiny: String
+  front_shiny_female: String
+}
+
+type Stat {
+  base_stat: Int
+  effort: Int
+  name: String
+  url: String
+}
+
+type Type {
+  slot: Int
+  name: String
+  url: String
+}
