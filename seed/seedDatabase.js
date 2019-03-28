@@ -8,6 +8,7 @@ const client = new GraphQLClient('http://localhost:4466')
 const mutation = `mutation addRocket(
 
    $name: String
+   $country: String
    $cost: Int
    $id: ID! @unique
    $payloadLeo: Int
@@ -17,6 +18,7 @@ const mutation = `mutation addRocket(
 ) {
     createRocket(data: {
       name: String
+      country: String
       cost: Int
       id: ID! @unique
       payloadLeo: Int
@@ -34,14 +36,18 @@ const sampleFiles = ['pokemon-data.json']
 
 async function main(inputFile) {
    const content = fs.readFileSync(`./seed/${inputFile}`)
-   const allPokemon = JSON.parse(content)
+   const allRocket = JSON.parse(content)
 
-   allPokemon.forEach(async item => {
+   allRocket.forEach(async item => {
       const variables = {
          name: item.name,
-         height: item.height,
-         weight: item.weight,
-         url: item.url,
+         country: item.country,
+         cost: item.cost,
+         id: item.id,
+         payloadLeo: item.payloadLeo,
+         payloadGto: item.payloadGto,
+         kgLeo: item.kgLeo,
+         kgGto: item.kgGto
       }
 
       await client

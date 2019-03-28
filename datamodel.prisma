@@ -1,7 +1,7 @@
 type Rocket {
-  name: String
-  country: String
-  cost: Int
+  name: String!
+  country: String!
+  cost: Int!
   id: ID! @unique
   payloadLeo: Int
   payloadGto:Int
