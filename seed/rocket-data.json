@@ -1,106 +1,106 @@
 [
     {
         "name": "Falcon 9 Reusable",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "62000000",
+        "payloadLeo": "15000",
+        "payloadGto": "5500",
+        "kgLeo": "4133",
+        "kgGto": "11273"
       },
       {
         "name": "Falcon 9 Expendable",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "90000000",
+        "payloadLeo": "22800",
+        "payloadGto": "8300",
+        "kgLeo": "3947",
+        "kgGto": "10843"
       },
       {
         "name": "Falcon Heavy Reusable",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "90000000",
+        "payloadLeo": "30000",
+        "payloadGto": "8000",
+        "kgLeo": "3000",
+        "kgGto": "11250"
       },
       {
         "name": "Falcon Heavy Semi-reusable",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "95000000",
+        "payloadLeo": "56000",
+        "payloadGto": "23000",
+        "kgLeo": "1696",
+        "kgGto":"4130"
       },
       {
         "name": "Falcon Heavy Expendible",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "150000000",
+        "payloadLeo": "63800",
+        "payloadGto": "26700",
+        "kgLeo": "2351",
+        "kgGto":"5618"
       },
       {
         "name": "Delta II Heavy",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "350000000",
+        "payloadLeo": "28790",
+        "payloadGto": "14210",
+        "kgLeo": "12157",
+        "kgGto": "24631"
       },
       {
         "name": "Delta IV Heavy",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "country": "USA",
+        "cost": "350000000",
+        "payloadLeo": "28790",
+        "payloadGto": "14210",
+        "kgLeo": "12157",
+        "kgGto": "24631"
       },
       {
         "name": "Atlas V 401",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
         "kgLeo": "",
-        "kgGto":
+        "kgGto": ""
       },
       {
         "name": "Atlas V 551",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
         "kgLeo": "",
-        "kgGto":
+        "kgGto": ""
       },
       {
         "name": "Vulcan 501",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
         "kgLeo": "",
-        "kgGto":
+        "kgGto": ""
       },
       {
         "name": "Vulcan 564",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
         "kgLeo": "",
-        "kgGto":
+        "kgGto": ""
       },
       {
         "name": "Antares 230",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -109,7 +109,7 @@
       },
       {
         "name": "SLS Block 1",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -118,7 +118,7 @@
       },
       {
         "name": "SLS Block 1B",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -127,7 +127,7 @@
       },
       {
         "name": "SLS Block 2",
-        "country": "",
+        "country": "USA",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -136,7 +136,7 @@
       },
       {
         "name": "Ariane 5 ECA",
-        "country": "",
+        "country": "EU",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -145,7 +145,7 @@
       },
       {
         "name": "Ariane 6 A62",
-        "country": "",
+        "country": "EU",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -154,7 +154,7 @@
       },
       {
         "name": "Ariane 6 A64",
-        "country": "",
+        "country": "EU",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -163,7 +163,7 @@
       },
       {
         "name": "Proton M",
-        "country": "",
+        "country": "Russia",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -172,7 +172,7 @@
       },
       {
         "name": "GSLV",
-        "country": "",
+        "country": "India",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -181,7 +181,7 @@
       },
       {
         "name": "LVM3",
-        "country": "",
+        "country": "India",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -190,7 +190,7 @@
       },
       {
         "name": "H2A 202",
-        "country": "",
+        "country": "Japan",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -199,7 +199,7 @@
       },
       {
         "name": "h2A 204",
-        "country": "",
+        "country": "Japan",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -208,7 +208,7 @@
       },
       {
         "name": "H2B",
-        "country": "",
+        "country": "Japan",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
@@ -217,7 +217,7 @@
       },
       {
         "name": "H3-24L",
-        "country": "",
+        "country": "Japan",
         "cost": "",
         "payloadLeo": "",
         "payloadGto": "",
