@@ -65,173 +65,164 @@
       {
         "name": "Atlas V 401",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto": ""
+        "cost": "109000000",
+        "payloadLeo": "9850",
+        "payloadGto": "4750",
+        "kgLeo": "11066",
+        "kgGto": "22947"
       },
       {
         "name": "Atlas V 551",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto": ""
+        "cost": "179000000",
+        "payloadLeo": "18813",
+        "payloadGto": "8856",
+        "kgLeo": "9515",
+        "kgGto": "20212"
       },
       {
         "name": "Vulcan 501",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto": ""
+        "cost": "100000000",
+        "payloadLeo": "20000",
+        "payloadGto": "10250",
+        "kgLeo": "5000",
+        "kgGto": "9756"
       },
       {
         "name": "Vulcan 564",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto": ""
+        "cost": "150000000",
+        "payloadLeo": "40000",
+        "payloadGto": "17230",
+        "kgLeo": "3750",
+        "kgGto": "8706"
       },
       {
         "name": "Antares 230",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "85000000",
+        "payloadLeo": "6600",
+        "payloadGto": "0",
+        "kgLeo": "12870",
+        "kgGto":"0"
       },
       {
         "name": "SLS Block 1",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "1000000000",
+        "payloadLeo": "70000",
+        "payloadGto": "0",
+        "kgLeo": "14286",
+        "kgGto": "0"
       },
       {
         "name": "SLS Block 1B",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "1000000000",
+        "payloadLeo": "105000",
+        "payloadGto": "0",
+        "kgLeo": "9524",
+        "kgGto": "0"
       },
       {
         "name": "SLS Block 2",
         "country": "USA",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "1000000000",
+        "payloadLeo": "130000",
+        "payloadGto": "0",
+        "kgLeo": "7692",
+        "kgGto": "0"
       },
       {
         "name": "Ariane 5 ECA",
         "country": "EU",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "178000000",
+        "payloadLeo": "21000",
+        "payloadGto": "9600",
+        "kgLeo": "8476",
+        "kgGto": "18542"
       },
       {
         "name": "Ariane 6 A62",
         "country": "EU",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "94000000",
+        "payloadLeo": "0",
+        "payloadGto": "4500",
+        "kgLeo": "0",
+        "kgGto": "20889"
       },
       {
         "name": "Ariane 6 A64",
         "country": "EU",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "117000000",
+        "payloadLeo": "20000",
+        "payloadGto": "12000",
+        "kgLeo": "5850",
+        "kgGto": "9750"
       },
       {
         "name": "Proton M",
         "country": "Russia",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "65000000",
+        "payloadLeo": "23000",
+        "payloadGto": "6920",
+        "kgLeo": "2826",
+        "kgGto": "9393"
       },
       {
         "name": "GSLV",
         "country": "India",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "47000000",
+        "payloadLeo": "5000",
+        "payloadGto": "2500",
+        "kgLeo": "9400",
+        "kgGto": "18800"
       },
       {
         "name": "LVM3",
         "country": "India",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "60000000",
+        "payloadLeo": "8000",
+        "payloadGto": "4000",
+        "kgLeo": "7500",
+        "kgGto": "15000"
       },
       {
         "name": "H2A 202",
         "country": "Japan",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "90000000",
+        "payloadLeo": "10000",
+        "payloadGto": "4100",
+        "kgLeo": "9000",
+        "kgGto": "21951"
       },
       {
         "name": "h2A 204",
         "country": "Japan",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "106000000",
+        "payloadLeo": "15000",
+        "payloadGto": "6000",
+        "kgLeo": "7067",
+        "kgGto": "17667"
       },
       {
         "name": "H2B",
         "country": "Japan",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "112500000",
+        "payloadLeo": "16500",
+        "payloadGto": "8000",
+        "kgLeo": "6818",
+        "kgGto": "14063"
       },
       {
         "name": "H3-24L",
         "country": "Japan",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
-      },
-      {
-        "name": "",
-        "country": "",
-        "cost": "",
-        "payloadLeo": "",
-        "payloadGto": "",
-        "kgLeo": "",
-        "kgGto":
+        "cost": "65000000",
+        "payloadLeo": "0",
+        "payloadGto": "6500",
+        "kgLeo": "0",
+        "kgGto": "10000"
       },
 
         
