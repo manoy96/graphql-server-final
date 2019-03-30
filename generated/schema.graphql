@@ -2,12 +2,27 @@
 ### Do not make changes to this file directly
 
 
+type AggregateRocket {
+  count: Int!
+}
+
 type Mutation {
   createRocket(data: RocketCreateInput!): Rocket!
+  deleteRocket(where: RocketWhereUniqueInput!): Rocket
+  updateRocket(data: RocketUpdateInput!, where: RocketWhereUniqueInput!): Rocket
+}
+
+type PageInfo {
+  endCursor: String
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
 }
 
 type Query {
   rocket(where: RocketWhereUniqueInput!): Rocket
+  rockets(after: String, before: String, first: Int, last: Int, orderBy: RocketOrderByInput, skip: Int, where: RocketWhereInput): [Rocket!]!
+  rocketsConnection(after: String, before: String, first: Int, last: Int, orderBy: RocketOrderByInput, skip: Int, where: RocketWhereInput): RocketConnection!
 }
 
 type Rocket {
@@ -21,6 +36,12 @@ type Rocket {
   payloadLeo: Int
 }
 
+type RocketConnection {
+  aggregate: AggregateRocket!
+  edges: [RocketEdge!]!
+  pageInfo: PageInfo!
+}
+
 input RocketCreateInput {
   cost: Int!
   country: String!
@@ -29,6 +50,132 @@ input RocketCreateInput {
   name: String!
   payloadGto: Int
   payloadLeo: Int
+}
+
+type RocketEdge {
+  cursor: String!
+  node: Rocket!
+}
+
+enum RocketOrderByInput {
+  cost_ASC
+  cost_DESC
+  country_ASC
+  country_DESC
+  createdAt_ASC
+  createdAt_DESC
+  id_ASC
+  id_DESC
+  kgGto_ASC
+  kgGto_DESC
+  kgLeo_ASC
+  kgLeo_DESC
+  name_ASC
+  name_DESC
+  payloadGto_ASC
+  payloadGto_DESC
+  payloadLeo_ASC
+  payloadLeo_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}
+
+input RocketUpdateInput {
+  cost: Int
+  country: String
+  kgGto: Int
+  kgLeo: Int
+  name: String
+  payloadGto: Int
+  payloadLeo: Int
+}
+
+input RocketWhereInput {
+  AND: [RocketWhereInput!]
+  cost: Int
+  cost_gt: Int
+  cost_gte: Int
+  cost_in: [Int!]
+  cost_lt: Int
+  cost_lte: Int
+  cost_not: Int
+  cost_not_in: [Int!]
+  country: String
+  country_contains: String
+  country_ends_with: String
+  country_gt: String
+  country_gte: String
+  country_in: [String!]
+  country_lt: String
+  country_lte: String
+  country_not: String
+  country_not_contains: String
+  country_not_ends_with: String
+  country_not_in: [String!]
+  country_not_starts_with: String
+  country_starts_with: String
+  id: ID
+  id_contains: ID
+  id_ends_with: ID
+  id_gt: ID
+  id_gte: ID
+  id_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_not: ID
+  id_not_contains: ID
+  id_not_ends_with: ID
+  id_not_in: [ID!]
+  id_not_starts_with: ID
+  id_starts_with: ID
+  kgGto: Int
+  kgGto_gt: Int
+  kgGto_gte: Int
+  kgGto_in: [Int!]
+  kgGto_lt: Int
+  kgGto_lte: Int
+  kgGto_not: Int
+  kgGto_not_in: [Int!]
+  kgLeo: Int
+  kgLeo_gt: Int
+  kgLeo_gte: Int
+  kgLeo_in: [Int!]
+  kgLeo_lt: Int
+  kgLeo_lte: Int
+  kgLeo_not: Int
+  kgLeo_not_in: [Int!]
+  name: String
+  name_contains: String
+  name_ends_with: String
+  name_gt: String
+  name_gte: String
+  name_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_not: String
+  name_not_contains: String
+  name_not_ends_with: String
+  name_not_in: [String!]
+  name_not_starts_with: String
+  name_starts_with: String
+  NOT: [RocketWhereInput!]
+  OR: [RocketWhereInput!]
+  payloadGto: Int
+  payloadGto_gt: Int
+  payloadGto_gte: Int
+  payloadGto_in: [Int!]
+  payloadGto_lt: Int
+  payloadGto_lte: Int
+  payloadGto_not: Int
+  payloadGto_not_in: [Int!]
+  payloadLeo: Int
+  payloadLeo_gt: Int
+  payloadLeo_gte: Int
+  payloadLeo_in: [Int!]
+  payloadLeo_lt: Int
+  payloadLeo_lte: Int
+  payloadLeo_not: Int
+  payloadLeo_not_in: [Int!]
 }
 
 input RocketWhereUniqueInput {

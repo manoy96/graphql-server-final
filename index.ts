@@ -7,12 +7,12 @@ import datamodelInfo from './generated/nexus-prisma'
 const Query = prismaObjectType({ 
   name: 'Query',
   // definition: t => t.prismaFields(['pokemons', 'stats'])
-  definition: t => t.prismaFields(['rocket'])
+  definition: t => t.prismaFields(['rocket', 'rockets', 'rocketsConnection'])
 })
 const Mutation = prismaObjectType({ 
   name: 'Mutation',
   // definition: t => t.prismaFields(['createPokemon', 'createStat'])
-  definition: t => t.prismaFields(['createRocket'])
+  definition: t => t.prismaFields(['createRocket', 'updateRocket', 'deleteRocket'])
 })
 
 const schema = makePrismaSchema({
