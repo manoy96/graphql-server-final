@@ -6,12 +6,12 @@
 # Deploy Prisma
 `npm run deploy`
 
-*Server is running on http://localhost:4000*
+## Start your playground
+`npm start`
 
 ![run](img/run.png)
 
-## Start your playground
-`npm start`
+*Server is running on http://localhost:4000*
 
 ![playground start](img/playground.png)
 
