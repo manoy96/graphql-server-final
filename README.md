@@ -1,16 +1,16 @@
 ## graphql-server
 
-#Start up your server
+# Start up your server
 `npm dockerStart`
 `npm run deploy`
 
 *Server is running on http://localhost:4000*
 
-##Start your playground
+## Start your playground
 `npm start`
 
-##Seed
+## Seed
 `npm run load`
 
-##Reset 
+## Reset 
 `npm run reset`
