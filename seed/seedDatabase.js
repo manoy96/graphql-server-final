@@ -7,9 +7,9 @@ const client = new GraphQLClient('http://localhost:4466')
 
 const mutation = `mutation addRocket(
 
-   $name: String,
-   $country: String,
-   $cost: Int,
+   $name: String!,
+   $country: String!,
+   $cost: Int!,
    $payloadLeo: Int,
    $payloadGto:Int,
    $kgLeo: Int,
@@ -47,11 +47,11 @@ async function main(inputFile) {
       const variables = {
          name: item.name,
          country: item.country,
-         cost: item.cost,
-         payloadLeo: item.payloadLeo,
-         payloadGto: item.payloadGto,
-         kgLeo: item.kgLeo,
-         kgGto: item.kgGto
+         cost: parseInt(item.cost),
+         payloadLeo: parseInt(item.payloadLeo),
+         payloadGto: parseInt(item.payloadGto),
+         kgLeo: parseInt(item.kgLeo),
+         kgGto: parseInt(item.kgGto)
       }
 
       await client

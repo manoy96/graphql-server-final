@@ -1,7 +1,7 @@
 ## graphql-server
 
 # Start up your server
-`npm dockerStart`
+`npm run dockerStart`
 
 # Deploy Prisma
 `npm run deploy`
