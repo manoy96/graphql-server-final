@@ -1,10 +1,16 @@
-## graphql-server
+### GraphQL-Server
 
-# Start up your server
+## Install Dependencies
+`npm install`
+
+## Start up your server
 `npm run dockerStart`
 
-# Deploy Prisma
+## Deploy Prisma
 `npm run deploy`
+
+## Seed the Database
+`npm run load`
 
 ## Start your playground
 `npm start`
@@ -18,8 +24,11 @@
 ### *check docs
 ![docs](img/docs.png)
 
-## Seed
-`npm run load`
+# Using the Playground
+
+## Create a 
+
+
 
 ## Reset 
 `npm run reset`
