@@ -8,7 +8,7 @@
 
 *Server is running on http://localhost:4000*
 
-
+![run][img/run]
 
 ## Start your playground
 `npm start`
