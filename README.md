@@ -28,7 +28,7 @@
 
 ## Query
 
-### All Rockets
+### Show All Rocket Data
 ``` 
 query allRocket {
   rockets {
@@ -44,14 +44,92 @@ query allRocket {
 } 
 ```
 
+### Specific Data
+```
+query myPayloadLeo {
+	rockets{
+    name 
+    id 
+    payloadLeo
+  }
+}
+```
+
+### Select One Item
+```
+query item {
+  rockets(where: {
+    id: "cjtt81cse01rc0774sv6uzgck"
+  }) {
+    id
+    name
+    cost
+  }
+}
+```
+
 ## Mutations
 
 ### Create a new rocket
+```
+mutation addRocket {
+  createRocket(data: {
+    name: "Falcon Heavy Expendible"
+    country: "USA"
+    cost: 150000000
+    payloadLeo: 63800
+    payloadGto: 26700
+    kgLeo: 2351
+    kgGto:5618
+  })
+  {
+    name
+    country
+    id
+    cost
+    payloadLeo
+    payloadGto
+    kgLeo
+    kgGto
+  }
+}
+```
 
 ### Update an existing rocket
+```
+mutation Update{
+  updateRocket(
+    data: {
+      country: "United States"
+    }
+    where: {
+      id: "cjtt81cse01rc0774sv6uzgck"
+    }
+  ) {
+    id
+    name
+    country
+  }
+}
+```
 
 ### Delete a rocket
-
+```
+mutation Delete{
+  deleteRocket(where: {
+    id: "cjtt81cse01rc0774sv6uzgck"
+  }) {
+    id
+    name
+    country
+    cost
+    payloadLeo
+    payloadGto
+    kgLeo
+    kgGto
+  }
+}
+```
 
 
 ## Reset 
