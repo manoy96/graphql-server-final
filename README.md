@@ -24,9 +24,33 @@
 ### *check docs
 ![docs](img/docs.png)
 
-# Using the Playground
+# Using the Playground (examples)
 
-## Create a 
+## Query
+
+### All Rockets
+``` 
+query allRocket {
+  rockets {
+    name
+    country
+    id
+    cost
+    payloadLeo
+    payloadGto
+    kgLeo
+    kgGto
+  }
+} 
+```
+
+## Mutations
+
+### Create a new rocket
+
+### Update an existing rocket
+
+### Delete a rocket
 
 
 
