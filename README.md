@@ -44,26 +44,14 @@ query allRocket {
 } 
 ```
 
-### Specific Data
+### Order Data by Cost
 ```
-query myPayloadLeo {
-	rockets{
-    name 
-    id 
-    payloadLeo
-  }
-}
-```
-
-### Select One Item
-```
-query item {
-  rockets(where: {
-    id: "cjtt81cse01rc0774sv6uzgck"
-  }) {
+query costDESC{
+  rockets(orderBy: cost_DESC) {
     id
     name
     cost
+    country
   }
 }
 ```
@@ -103,7 +91,7 @@ mutation Update{
       country: "United States"
     }
     where: {
-      id: "cjtt81cse01rc0774sv6uzgck"
+      id: "_________ID_________"
     }
   ) {
     id
@@ -117,7 +105,7 @@ mutation Update{
 ```
 mutation Delete{
   deleteRocket(where: {
-    id: "cjtt81cse01rc0774sv6uzgck"
+    id: "_________ID_________"
   }) {
     id
     name
