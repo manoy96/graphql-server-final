@@ -7,7 +7,7 @@ type Rocket {
   payloadGto:Int
   kgLeo: Int
   kgGto: Int
-
+  url: String
 }
 
 
