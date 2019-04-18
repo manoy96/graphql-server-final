@@ -14,6 +14,7 @@ const mutation = `mutation addRocket(
    $payloadGto:Int,
    $kgLeo: Int,
    $kgGto: Int,
+   $url: String
 ) {
     createRocket(data: {
       name: $name
@@ -23,6 +24,7 @@ const mutation = `mutation addRocket(
       payloadGto: $payloadGto
       kgLeo: $kgLeo
       kgGto: $kgGto
+      url: $url
     })
     {
       id
@@ -33,6 +35,7 @@ const mutation = `mutation addRocket(
       payloadGto
       kgLeo
       kgGto
+      url
     }
   }
 `
@@ -51,7 +54,8 @@ async function main(inputFile) {
          payloadLeo: parseInt(item.payloadLeo),
          payloadGto: parseInt(item.payloadGto),
          kgLeo: parseInt(item.kgLeo),
-         kgGto: parseInt(item.kgGto)
+         kgGto: parseInt(item.kgGto),
+         url: item.url,
       }
 
       await client
