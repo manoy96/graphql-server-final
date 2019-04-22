@@ -46,16 +46,16 @@ async function main(inputFile) {
    const content = fs.readFileSync(`./seed/${inputFile}`)
    const allRocket = JSON.parse(content)
 
-   allRocket.forEach(async item => {
+   allRocket.forEach(async myRocket => {
       const variables = {
-         name: item.name,
-         country: item.country,
-         cost: parseInt(item.cost),
-         payloadLeo: parseInt(item.payloadLeo),
-         payloadGto: parseInt(item.payloadGto),
-         kgLeo: parseInt(item.kgLeo),
-         kgGto: parseInt(item.kgGto),
-         url: item.url,
+         name: myRocket.name,
+         country: myRocket.country,
+         cost: parseInt(myRocket.cost),
+         payloadLeo: parseInt(myRocket.payloadLeo),
+         payloadGto: parseInt(myRocket.payloadGto),
+         kgLeo: parseInt(myRocket.kgLeo),
+         kgGto: parseInt(myRocket.kgGto),
+         url: myRocket.url,
       }
 
       await client
