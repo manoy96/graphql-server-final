@@ -1,7 +1,6 @@
 const fs = require('fs')
 const {
-   GraphQLClient
-} = require('graphql-request')
+   GraphQLClient} = require('graphql-request')
 
 const client = new GraphQLClient('http://localhost:4466')
 
